@@ -6,11 +6,11 @@ from email.mime.multipart import MIMEMultipart
 
 mail_host='smtp.qq.com'
 #设置传输服务器（qq，163邮箱# ）
-mail_user='1125838303@qq.com'
+mail_user='XXX@qq.com'
 mail_pass='twjxmfogqdiniegg'#激活码
 
-sender='1125838303@qq.com'  #发送者
-receivers=['2522114229@qq.com']  #接受者
+sender='XXX@qq.com'  #发送者
+receivers=['XXX@qq.com']  #接受者
 f='fsdfdsf'
 msg=MIMEMultipart()
 html="""
@@ -25,6 +25,8 @@ html="""
 </body>
 </html>
 """
+#cid:0代表html中图片的位置表示方法
+
 subject='您好！'
 message=MIMEText('fdsfdsf','plain','utf-8')#class email.mime.text.MIMEText(_text[, _subtype[, _charset]])：MIME文本对象，其中_text是邮件内容，_subtype邮件类型，可以是text/plain（普通文本邮件），html/plain(html邮件), _charset编码，可以是gb2312等等。
 #message=MIMEText(html,'html','utf-8'
